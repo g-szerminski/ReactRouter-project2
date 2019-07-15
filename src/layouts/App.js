@@ -1,9 +1,15 @@
 import React from "react";
-
 import "../styles/App.css";
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
-  return <div className="App">Strona SPA</div>;
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">Strona SPA</div>
+      </Router>
+    );
+  }
 }
 
 export default App;
